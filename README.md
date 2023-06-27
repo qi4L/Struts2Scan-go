@@ -18,3 +18,15 @@ Usage of main.exe:
   -t Type
       指定contentType头
 ```
+
++ 一键检测
+
+```
+GolangStruts2.exe -u http://127.0.0.1 -n allPoc
+```
+
++ 单个利用
+
+```
+GolangStruts2.exe -u http://127.0.0.1 -n S2-001 -c whoami
+```
