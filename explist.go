@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"github.com/fatih/color"
 	"github.com/imroc/req/v3"
-	"log"
 	"math/rand"
 	"strings"
 	"time"
@@ -76,7 +75,7 @@ func (c *WorkExp) PocS001() {
 			Post(c.Url)
 	}
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), string(r1+r2)) {
@@ -101,7 +100,7 @@ func (c *WorkExp) PocS001() {
 					Post(c.Url)
 			}
 			if err != nil { // Error handling.
-				log.Println("error:", err)
+				//log.Println("error:", err)
 			}
 			if resp != nil {
 				if strings.Contains(resp.String(), string(r1+r2)) {
@@ -139,7 +138,7 @@ func (c *WorkExp) ExpS001Cmd() {
 			Post(c.Url)
 	}
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -164,7 +163,7 @@ func (c *WorkExp) ExpS001Cmd() {
 			Post(c.Url)
 	}
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -196,7 +195,7 @@ func (c *WorkExp) ExpS001GetPath() {
 			Post(c.Url)
 	}
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp)
@@ -221,7 +220,7 @@ func (c *WorkExp) ExpS001GetPath() {
 			Post(c.Url)
 	}
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp)
@@ -240,7 +239,7 @@ func (c *WorkExp) PocS003() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(reqUrl)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), string(r1+r2)) {
@@ -272,7 +271,7 @@ func (c *WorkExp) ExpS003Cmd() {
 			Post(c.Url)
 	}
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp)
@@ -291,7 +290,7 @@ func (c *WorkExp) PocS005() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), string(r1+r2)) {
@@ -305,7 +304,7 @@ func (c *WorkExp) PocS005() {
 				SetHeader("User-Agent", utils.GlobalUserAgent).
 				Get(Payload)
 			if err != nil { // Error handling.
-				log.Println("error:", err)
+				//log.Println("error:", err)
 			}
 			if resp != nil {
 				if strings.Contains(resp.String(), string(r1+r2)) {
@@ -325,7 +324,7 @@ func (c *WorkExp) ExpS005Cmd() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -337,7 +336,7 @@ func (c *WorkExp) ExpS005Cmd() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -350,7 +349,7 @@ func (c *WorkExp) ExpS005GetPath() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -387,7 +386,7 @@ func (c *WorkExp) PocS007() {
 			Post(c.Url)
 	}
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), string(r1+r2)) {
@@ -412,7 +411,7 @@ func (c *WorkExp) PocS007() {
 					Post(c.Url)
 			}
 			if err != nil { // Error handling.
-				log.Println("error:", err)
+				//log.Println("error:", err)
 			}
 			if resp != nil {
 				if strings.Contains(resp.String(), string(r1+r2)) {
@@ -450,7 +449,7 @@ func (c *WorkExp) ExpS007Cmd() {
 			Post(c.Url)
 	}
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp)
@@ -475,7 +474,7 @@ func (c *WorkExp) ExpS007Cmd() {
 			Post(c.Url)
 	}
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -494,7 +493,7 @@ func (c *WorkExp) PocS008() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), string(r1+r2)) {
@@ -512,7 +511,7 @@ func (c *WorkExp) ExpS008Cmd() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -538,7 +537,7 @@ func (c *WorkExp) PocS009() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(c.Url)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), string(r1+r2)) {
@@ -556,7 +555,7 @@ func (c *WorkExp) ExpS009Cmd() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(c.Url)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -585,7 +584,7 @@ func (c *WorkExp) PocS012() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(c.Url)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), string(r1+r2)) {
@@ -617,7 +616,7 @@ func (c *WorkExp) ExpS012Cmd() {
 			Post(c.Url)
 	}
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -636,7 +635,7 @@ func (c *WorkExp) PocS013() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), string(r1+r2)) {
@@ -654,7 +653,7 @@ func (c *WorkExp) ExpS013Cmd() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -667,7 +666,7 @@ func (c *WorkExp) ExpS013GetPath() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -686,7 +685,7 @@ func (c *WorkExp) PocS015() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), "6308") {
@@ -704,7 +703,7 @@ func (c *WorkExp) ExpS015Cmd() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -724,7 +723,7 @@ func (c *WorkExp) PocS016() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), string(r1+r2)) {
@@ -742,7 +741,7 @@ func (c *WorkExp) PocS016() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), string(r1+r2)) {
@@ -760,7 +759,7 @@ func (c *WorkExp) PocS016() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), string(r1+r2)) {
@@ -778,7 +777,7 @@ func (c *WorkExp) ExpS016Cmd() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -790,7 +789,7 @@ func (c *WorkExp) ExpS016Cmd() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -802,7 +801,7 @@ func (c *WorkExp) ExpS016Cmd() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -815,7 +814,7 @@ func (c *WorkExp) ExpS016GetPath() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -834,7 +833,7 @@ func (c *WorkExp) PocS019() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(reqUrl)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), string(r1+r2)) {
@@ -852,7 +851,7 @@ func (c *WorkExp) ExpS019Cmd() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(reqUrl)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -865,7 +864,7 @@ func (c *WorkExp) ExpS019GetPath() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -902,7 +901,7 @@ func (c *WorkExp) PocS029() {
 			Post(c.Url)
 	}
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), string(r1+r2)) {
@@ -938,7 +937,7 @@ func (c *WorkExp) ExpS029Cmd() {
 			Post(c.Url)
 	}
 	if err != nil {
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -957,7 +956,7 @@ func (c *WorkExp) PocS032() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(reqUrl)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), string(r1+r2)) {
@@ -975,7 +974,7 @@ func (c *WorkExp) ExpS032Cmd() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(reqUrl)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -988,7 +987,7 @@ func (c *WorkExp) ExpS032GetPath() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(reqUrl)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -1007,7 +1006,7 @@ func (c *WorkExp) PocS033() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(reqUrl)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), string(r1+r2)) {
@@ -1025,7 +1024,7 @@ func (c *WorkExp) ExpS033Cmd() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(reqUrl)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -1044,7 +1043,7 @@ func (c *WorkExp) PocS037() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), string(r1+r2)) {
@@ -1062,7 +1061,7 @@ func (c *WorkExp) ExpS037Cmd() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -1075,7 +1074,7 @@ func (c *WorkExp) ExpS037GetPath() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -1102,7 +1101,7 @@ func (c *WorkExp) PocS045() {
 			Post(c.Url)
 	}
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), string(r1+r2)) {
@@ -1128,7 +1127,7 @@ func (c *WorkExp) ExpS045Cmd() {
 			Post(c.Url)
 	}
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -1148,7 +1147,7 @@ func (c *WorkExp) ExpS045GetPath() {
 			Post(c.Url)
 	}
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -1181,7 +1180,7 @@ Content-Type: text/plain
 			Post(c.Url)
 	}
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), string(r1+r2)) {
@@ -1213,7 +1212,7 @@ Content-Type: text/plain
 			Post(c.Url)
 	}
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -1239,7 +1238,7 @@ Content-Type: text/plain
 			Post(c.Url)
 	}
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -1276,7 +1275,7 @@ func (c *WorkExp) PocS048() {
 			Post(c.Url)
 	}
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), string(r1+r2)) {
@@ -1301,7 +1300,7 @@ func (c *WorkExp) PocS048() {
 					Post(c.Url)
 			}
 			if err != nil { // Error handling.
-				log.Println("error:", err)
+				//log.Println("error:", err)
 			}
 			if resp != nil {
 				if strings.Contains(resp.String(), string(r1+r2)) {
@@ -1340,7 +1339,7 @@ func (c *WorkExp) ExpS048Cmd() {
 			Post(c.Url)
 	}
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -1365,7 +1364,7 @@ func (c *WorkExp) ExpS048Cmd() {
 			Post(c.Url)
 	}
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -1387,7 +1386,7 @@ func (c *WorkExp) ExpS052Cmd() {
 			Post(c.Url)
 	}
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp)
@@ -1424,7 +1423,7 @@ func (c *WorkExp) PocS053() {
 			Post(c.Url)
 	}
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), string(r1+r2)) {
@@ -1449,7 +1448,7 @@ func (c *WorkExp) PocS053() {
 					Post(c.Url)
 			}
 			if err != nil { // Error handling.
-				log.Println("error:", err)
+				//log.Println("error:", err)
 			}
 			if resp != nil {
 				if strings.Contains(resp.String(), string(r1+r2)) {
@@ -1487,7 +1486,7 @@ func (c *WorkExp) ExpS053Cmd() {
 			Post(c.Url)
 	}
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -1512,7 +1511,7 @@ func (c *WorkExp) ExpS053Cmd() {
 			Post(c.Url)
 	}
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -1532,7 +1531,7 @@ func (c *WorkExp) PocDevMode() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), string(r1+r2)) {
@@ -1550,7 +1549,7 @@ func (c *WorkExp) ExpDevModeCmd() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -1563,7 +1562,7 @@ func (c *WorkExp) ExpDevModeGetPath() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -1582,7 +1581,7 @@ func (c *WorkExp) PocS057() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), string(r1+r2)) {
@@ -1600,7 +1599,7 @@ func (c *WorkExp) PocS057() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), string(r1+r2)) {
@@ -1618,7 +1617,7 @@ func (c *WorkExp) PocS057() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), string(r1+r2)) {
@@ -1636,7 +1635,7 @@ func (c *WorkExp) PocS057() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		if strings.Contains(resp.String(), string(r1+r2)) {
@@ -1654,7 +1653,7 @@ func (c *WorkExp) ExpS057Cmd() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -1666,7 +1665,7 @@ func (c *WorkExp) ExpS057Cmd() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -1678,7 +1677,7 @@ func (c *WorkExp) ExpS057Cmd() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
@@ -1690,7 +1689,7 @@ func (c *WorkExp) ExpS057Cmd() {
 		SetHeader("User-Agent", utils.GlobalUserAgent).
 		Get(Payload)
 	if err != nil { // Error handling.
-		log.Println("error:", err)
+		//log.Println("error:", err)
 	}
 	if resp != nil {
 		fmt.Println(resp.String())
