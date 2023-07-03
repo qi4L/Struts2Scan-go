@@ -31,10 +31,10 @@ builds:
       - goos: linux
         goarch: mips64
     hooks:
-       post: upx --best -f -q "{{ .Path }}"
+      post: upx --best -f -q "{{ .Path }}"
 
-# UnknownExecutableFormatException
-# CantPackException: can't pack new-exe
+  # UnknownExecutableFormatException
+  # CantPackException: can't pack new-exe
   - id: "without-upx"
     env:
       - CGO_ENABLED=0
@@ -58,8 +58,7 @@ builds:
 
 
 archives:
-  - format: tar.gz
-    replacements:
+  - replacements:
       darwin: Darwin
       linux: Linux
       windows: Windows
