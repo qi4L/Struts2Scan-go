@@ -58,10 +58,11 @@ builds:
 
 
 archives:
-  - replacements:
-      darwin: Darwin 1.1
-      linux: Linux 1.1
-      windows: Windows 1.1
+  - format: tar.gz
+    replacements:
+      darwin: Darwin
+      linux: Linux
+      windows: Windows
       386: i386
       amd64: amd64
 checksum:
