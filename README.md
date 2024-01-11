@@ -1,5 +1,3 @@
-![](https://socialify.git.ci/nu1r/GolangStruts2/image?description=1&font=Raleway&language=1&logo=https%3A%2F%2Fs1.ax1x.com%2F2022%2F09%2F12%2FvXqOUI.jpg&name=1&owner=1&pattern=Signal&theme=Light)
-
 用Golang重写[Struts2-Scan](https://github.com/HatBoy/Struts2-Scan)项目。
 
 工具参数说明
